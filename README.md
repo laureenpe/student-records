@@ -2,11 +2,7 @@
 Este es el ejercicio evaluado por squad de la lección 17
 # Ejercicio Evaluado Student-records
 
-* itálica*
-
-** negritas**
-
-# CONDICIONES: 
+## Condiciones
 
 ** El enfoque debe ser la resolución del ejercicio bajo el paradigma funcional **
 
@@ -15,7 +11,7 @@ Este es el ejercicio evaluado por squad de la lección 17
 *Entregar el enlace de trello para evaluar la organización de tareas
 **Agregar estilos para ganar puntos extras 
 
-# LO QUE HAY QUE HACER:
+## What To DO
 * Esta es "Student Records",una pequeña plataforma que nos sirve para llevar todo el registro de las estudiantes de Laboratoria.
 * En esta plataforma agregamos algunos datos y nos entrega los perfiles de las estudiantes.
 *Vamos a hacer que nuestras estudiantes se ingresen en un arreglo de objetos y las pueda consultar cuantas veces yo quiera, solo 2 botones les daremos funcionalidades:
