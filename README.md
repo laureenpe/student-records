@@ -14,7 +14,7 @@ Este es el ejercicio evaluado por squad de la lección 17
 ## What To DO
 * Esta es "Student Records",una pequeña plataforma que nos sirve para llevar todo el registro de las estudiantes de Laboratoria.
 * En esta plataforma agregamos algunos datos y nos entrega los perfiles de las estudiantes.
-*Vamos a hacer que nuestras estudiantes se ingresen en un arreglo de objetos y las pueda consultar cuantas veces yo quiera, solo 2 botones les daremos funcionalidades:
+* Vamos a hacer que nuestras estudiantes se ingresen en un arreglo de objetos y las pueda consultar cuantas veces yo quiera, solo 2 botones les daremos funcionalidades:
 * Botón Add Student y Botón Print All *
 * Los otros 2 solo los dejaremos a modo de diseño 
 - Consta de 4 botones:
