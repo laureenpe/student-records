@@ -12,26 +12,45 @@
 <body>
 <header>
 	<div class="container">
-		<h1>Student Records</h1>
+		<h1><span class="icon icon-university"></span> Student Records</h1>
 	</div>
 </header>
 <section class="cuerpo">
 	<div class="container">
-		<div class="botones">
-			<button class="btn" id="addStudent" onclick="addStudent()">Add Student</button>
-			<button class="btn" id="printAll" onclick="showStudent()">Print All</button>
-			<button class="btn" id="update" onclick="#">Update Dropout</button>
-			<button class="btn" id="employability" onclick="#">Run Employability</button>
+		<div class="nuevo-estudiante">
+			<h3>Añadir nueva alumna</h3>
+			<form action="#" method="post">
+				<div>
+					<label for="nombre">Nombre:</label>
+					<input type="text" name="nombre" id="nombre" value="" tabindex="1" />
+				</div>
+				<div>
+					<label for="notaT">Nota Técnica:</label>
+					<input type="text" name="notaT" id="notaT" value="" tabindex="2" />
+				</div>
+				<div>
+					<label for="notaE">Nota Socio-Emocional:</label>
+					<input type="text" name="notaE" id="notaE" value="" tabindex="3" />
+				</div>
+			</form>
+			<button class="btn" id="addStudent" onclick="addStudent()" tabindex="4"><span class="icon icon-android-person-add"></span> Add Student</button>
 		</div>
+		<div class="caja-derecha">
+			<div class="botones">
+				<button class="btn" id="printAll" onclick="showStudent()"><span class="icon icon-android-print"></span> Print All</button>
+				<button class="btn" id="update" href="#"><span class="icon icon-android-close"></span> Update Dropout</button>
+				<button class="btn" id="employability" href="#"><span class="icon icon-briefcase"></span> Run Employability</button>
+			</div>
 
-		<div id="print">
+			<div id="print">
 
+			</div>
 		</div>
 	</div>
 </section>
 <footer>
 	<div class="container">
-		<small>Desarrollado por <span>The Ramonas</span>.</small>
+		<small>Desarrollado por <span class="border">The Ramonas</span>.</small>
 	</div>
 </footer>
 	<script src="assets/js/main.js"></script>

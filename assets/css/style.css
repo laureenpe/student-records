@@ -1,3 +1,60 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "untitled-font-5";
+  src:url("../fonts/untitled-font-5.eot");
+  src:url("../fonts/untitled-font-5.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/untitled-font-5.woff") format("woff"),
+    url("../fonts/untitled-font-5.ttf") format("truetype"),
+    url("../fonts/untitled-font-5.svg#untitled-font-5") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "untitled-font-5" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-5" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-android-person-add:before {
+  content: "\61";
+}
+.icon-university:before {
+  content: "\62";
+}
+.icon-briefcase:before {
+  content: "\65";
+}
+.icon-android-print:before {
+  content: "\66";
+}
+.icon-android-close:before {
+  content: "\63";
+}
+
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -31,7 +88,8 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   font-family: 'Crimson Text', Helvetica, Arial, sans-serif;
-  background-color: #D2D4D6;
+  background-color: #EEEEEE;
+  color: #222831;
 }
 ol, ul {
   list-style: none;
@@ -52,13 +110,13 @@ table {
 .container {
   display: block;
   width: 100%;
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
   overflow: hidden;
 }
 
 header {
-  background-color: #7D8DF6;
+  background-color: #222831;
   color: white;
   padding: 3em 0 2em;
   margin-bottom: 5em;
@@ -70,8 +128,8 @@ h1 {
 }
 
 h3 {
-  color: #7D8DF6;
-  margin: 3em 0 1em;
+  color: #222831;
+  margin: 0 0 2em;
   font-size: 1.2rem;
 }
 
@@ -82,17 +140,16 @@ h1, h3 {
 }
 
 form {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 600px;
-  padding: 0 5%;
+  width: 100%;
+  margin: 0 auto 2em;
+  padding: 0;
 }
 
 label {
   display: block;
   font-family: 'Julius Sans One', Helvetica, Arial, sans-serif;
   font-weight: 800;
-  color: #7D8DF6;
+  color: #rgb(0, 146, 202);
   margin: 1.2em 0 .5em;
 }
 
@@ -104,6 +161,22 @@ input, select {
     padding: 1%;
     font-size: 120%;
     transition: .5s ease all;
+}
+
+.nuevo-estudiante {
+  width: 25%;
+  display: block;
+  overflow: hidden;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 4%;
+}
+
+.caja-derecha {
+    width: 63%;
+    margin: 0 0 0 3%;
+    overflow: hidden;
+    float: left;
 }
 
 .botones {
@@ -121,7 +194,7 @@ input, select {
   text-transform: lowercase;
   cursor: pointer;
   color: #fff;
-  background-color: rgb(255, 119, 27);
+  background-color: rgb(0, 146, 202);
   letter-spacing: 1px;
   font-size: 90%;
   padding: 1em 1.5em;
@@ -131,8 +204,13 @@ input, select {
 }
 
 .btn:hover, .btn:active, .btn:focus {
-  background-color: rgba(255, 119, 27, .7);
+  background-color: rgba(0, 146, 202, .7);
   transition: .5s ease all;
+}
+
+.icon {
+    top: 2px;
+    position: relative;
 }
 
 p {
@@ -143,8 +221,8 @@ p {
   text-align: left;
 }
 
-span {
-  border-bottom: 2px #7D8DF6 solid;
+.border {
+  border-bottom: 2px #222831 solid;
   font-weight: 700;
 }
 
@@ -152,7 +230,7 @@ b {
   font-family: 'Julius Sans One', Helvetica, Arial, sans-serif;
   font-weight: 800;
   font-size: 112%;
-  color: #7D8DF6;
+  color: #222831;
 }
 
 small {
@@ -165,4 +243,8 @@ footer {
   width: 100%;
   margin: 5em 0 0;
   padding: 0 0 2em;
+}
+footer small {
+    padding: 1em 0;
+    display: block;
 }
