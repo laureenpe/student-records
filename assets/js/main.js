@@ -17,6 +17,8 @@ function pedirDatos(datos)
 }
 
 res = [];
+var print = document.getElementById("print")
+
 function addStudent()
 {
 	var nombre = pedirDatos("nombre");
@@ -26,3 +28,17 @@ function addStudent()
 	return res;
 }
 
+function showStudent(){
+printHTML(" ");
+
+res.forEach(function(elemento){
+print.innerHTML += "<strong>" + "Nombre: " + "</strong>" + elemento.studentname + "<br>" + elemento.techpoints + "<br>" 
++ elemento.lifepoints + "<br>" + elemento.status + "<br>"
+})
+
+}
+
+function printHTML (html){
+ print.innerHTML = '';
+ print.innerHTML = html;
+}
