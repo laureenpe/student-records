@@ -19,9 +19,9 @@ Este es el ejercicio evaluado por squad de la lección 17
 * Los otros 2 solo los dejaremos a modo de diseño 
 - Consta de 4 botones:
 * El botón Add Student agrega una nueva estudiante y nos pregunta mediante prompt:
-**Nombre de la estudiante**
-**Porcentaje Técnico (TEch Points)**
-**Porcentaje Habilidades** 
+**Nombre de la estudiante**,
+**Porcentaje Técnico (TEch Points)**,
+**Porcentaje Habilidades**, 
 **Socio-Emocionales(Life Points)**
 - Al agregar a una estudiante también se agrega automáticamente su:
 - Puedo agregar a mas de una pero siempre me mostrará solo a la última que agregué
