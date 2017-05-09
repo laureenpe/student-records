@@ -1,0 +1,168 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, left,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Crimson Text', Helvetica, Arial, sans-serif;
+  background-color: #D2D4D6;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  background-color: #7D8DF6;
+  color: white;
+  padding: 3em 0 2em;
+  margin-bottom: 5em;
+  text-align: left;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  color: #7D8DF6;
+  margin: 3em 0 1em;
+  font-size: 1.2rem;
+}
+
+h1, h3 {
+  font-family: 'Julius Sans One', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  text-align: left;
+}
+
+form {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0 5%;
+}
+
+label {
+  display: block;
+  font-family: 'Julius Sans One', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  color: #7D8DF6;
+  margin: 1.2em 0 .5em;
+}
+
+input, select {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #f1f1f1;
+    line-height: 120%;
+    padding: 1%;
+    font-size: 120%;
+    transition: .5s ease all;
+}
+
+.botones {
+  display: block;
+  overflow: hidden;
+  margin: 0 0 3em;
+}
+
+.btn {
+  float: left;
+  display: block;
+  text-align: center;
+  font-family: 'Julius Sans One', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  text-transform: lowercase;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(255, 119, 27);
+  letter-spacing: 1px;
+  font-size: 90%;
+  padding: 1em 1.5em;
+  transition: .5s ease all;
+  margin: 0 1em 0 0;
+  border: none;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+  background-color: rgba(255, 119, 27, .7);
+  transition: .5s ease all;
+}
+
+p {
+  font-family: 'Crimson Text', sans-serif;
+  display: block;
+  margin: 1em 0;
+  line-height: 1.7;
+  text-align: left;
+}
+
+span {
+  border-bottom: 2px #7D8DF6 solid;
+  font-weight: 700;
+}
+
+b {
+  font-family: 'Julius Sans One', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 112%;
+  color: #7D8DF6;
+}
+
+small {
+  font-size: .8rem;
+}
+
+footer {
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin: 5em 0 0;
+  padding: 0 0 2em;
+}

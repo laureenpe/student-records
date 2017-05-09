@@ -1,22 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es_CL">
 <head>
 	<meta charset="UTF-8">
 	<title>Student Records</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="CONTENT">
+	<meta name="author" content="The Ramonas Squad">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Julius+Sans+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+<header>
+	<div class="container">
+		<h1>Student Records</h1>
+	</div>
+</header>
+<section class="cuerpo">
+	<div class="container">
+		<div class="botones">
+			<button class="btn" id="addStudent" onclick="addStudent()">Add Student</button>
+			<button class="btn" id="printAll" onclick="showStudent()">Print All</button>
+			<button class="btn" id="update" onclick="#">Update Dropout</button>
+			<button class="btn" id="employability" onclick="#">Run Employability</button>
+		</div>
 
+		<div id="print">
 
-<div id="botones">
-	<button id="addStudent" onclick="addStudent()">Add Student</button>
-	<button id="printAll" onclick="showStudent()">Print All</button>
-	<button id="update" onclick="#">Update Dropout</button>
-	<button id="employability" onclick="#">Run Employability</button>
-</div>
-
-<p id="print">
-
-</p>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="container">
+		<small>Desarrollado por <span>The Ramonas</span>.</small>
+	</div>
+</footer>
 	<script src="assets/js/main.js"></script>
 </body>
 </html>
