@@ -21,7 +21,8 @@ Este es el ejercicio evaluado por squad de la lección 17
 * El botón Add Student agrega una nueva estudiante y nos pregunta mediante prompt:
 **Nombre de la estudiante**
 **Porcentaje Técnico (TEch Points)**
-**Porcentaje Habilidades ** **Socio-Emocionales(Life Points)**
+**Porcentaje Habilidades ** 
+**Socio-Emocionales(Life Points)**
 - Al agregar a una estudiante también se agrega automáticamente su:
 - Puedo agregar a mas de una pero siempre me mostrará solo a la última que agregué
 - Al agregar a una estudiante, cuando se terminan de recoger los datos, se imprime su ficha debajo de los botones.
