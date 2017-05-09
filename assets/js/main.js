@@ -1,3 +1,4 @@
+
 function Student(id,studentname,techpoints,lifepoints,status){
 	this.id = id;
 	this.studentname = studentname;
