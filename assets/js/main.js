@@ -1,8 +1,8 @@
-function Student(id, studentname, techpoints, lifepoints, status){
+function Student(id, studentName, techPoints, lifePoints, status){
 	this.id = id;
-	this.studentname = studentname;
-	this.techpoints = techpoints;
-	this.lifepoints = lifepoints;
+	this.studentName = studentName;
+	this.techPoints = techPoints;
+	this.lifePoints = lifePoints;
 	this.status = status;
 }
 // elementos a agregar
@@ -19,28 +19,32 @@ function ver_imagen() {
 }
 
 var imagen = new ver_imagen();
-src = imagen[ Math.floor(Math.random() * imagen.N) ];
+var src = imagen[ Math.floor(Math.random() * imagen.N) ];
 
 res = [];
 var print = document.getElementById("print");
 
 function addStudent() {
-	var nombre = document.getElementById("nombre").value;
-	var notaT = document.getElementById("notaT").value;
-	var notaE = document.getElementById("notaE").value;
-	res.push( new Student( res.length + 1, nombre, notaT, notaE, "active" ) );
-	nombre = " ";
-	notaT = " ";
-	notaE = " ";
-	showStudent(res[res.length]);
+	var studentName = document.getElementById("studentName").value;
+	var techPoints = document.getElementById("techPoints").value;
+	var lifePoints = document.getElementById("lifePoints").value;
+	res.push( new Student( res.length + 1, studentName, techPoints, lifePoints, "active" ) );
+	document.getElementById("studentName").value = "";
+	document.getElementById("techPoints").value = "";
+	document.getElementById("lifePoints").value = "";
+	document.getElementById("print").innerHTML = "";
+	newStudent(res[res.length - 1]);
 	return res;
+}
+
+function newStudent(el) {
+	document.getElementById("print").innerHTML = '<div class="student"><img src=' + src + '><h4>' + el.studentName + '</h4><p><span class="border">Tech Skills:</span> ' + el.techPoints + '%</p><p><span class="border">Life Skills:</span> ' + el.lifePoints + '%</p><p><span class="border">Status:</span> ' + el.status + '</p></div>';
 }
 
 function showStudent() {
 	printHTML(" ");
 	res.forEach(function(elemento){
-	print.innerHTML += "<img src="+src+">" + "<br><strong>" + "Nombre: " + "</strong>" + elemento.studentname + "<br>" + elemento.techpoints + "<br>" 
-	+ elemento.lifepoints + "<br>" + elemento.status + "<br>";
+	print.innerHTML += '<div class="student"><img src=' + src + '><h4>' + elemento.studentName + '</h4><p><span class="border">Tech Skills:</span> ' + elemento.techPoints + '</p><p><span class="border">Life Skills:</span> ' + elemento.lifePoints + '</p><p><span class="border">Status:</span> ' + elemento.status + '</p></div>';
 	});
 }
 
