@@ -1,54 +1,50 @@
-function Student(id,studentname,techpoints,lifepoints,status){
-this.id = id;
-this.studentname = studentname;
-this.techpoints = techpoints;
-this.lifepoints = lifepoints;
-this.status = status
+function Student(id, studentname, techpoints, lifepoints, status){
+	this.id = id;
+	this.studentname = studentname;
+	this.techpoints = techpoints;
+	this.lifepoints = lifepoints;
+	this.status = status;
 }
 // elementos a agregar
 //const student01 = new Student(1,"Susana",80,80,"Active");
 
-function ver_imagen()
-{
-var n=0;
-this[n++]="assets/img/1.png";
-this[n++]="assets/img/2.png";
-this[n++]="assets/img/3.png";
-this[n++]="assets/img/4.png";
-this[n++]="assets/img/5.png";
-this.N=n;
+function ver_imagen() {
+	var n = 0;
+	this[n++] = "assets/img/1.png";
+	this[n++] = "assets/img/2.png";
+	this[n++] = "assets/img/3.png";
+	this[n++] = "assets/img/4.png";
+	this[n++] = "assets/img/5.png";
+	this.N = n;
 }
-var imagen=new ver_imagen();
-src= imagen[ Math.floor(Math.random() * imagen.N) ]
 
-function pedirDatos(datos)
-{
-return prompt("Ingrese el " + datos + " de la estudiante")
-}
+var imagen = new ver_imagen();
+src = imagen[ Math.floor(Math.random() * imagen.N) ];
 
 res = [];
-var print = document.getElementById("print")
+var print = document.getElementById("print");
 
-function addStudent()
-{
-var nombre = pedirDatos("nombre");
-var notaT = pedirDatos("Nota Tecnica")
-var notaE = pedirDatos("Nota socio-Emocional");
-res.push( new Student(res.length +1, nombre, notaT, notaE, "active"))
-return res;
+function addStudent() {
+	var nombre = document.getElementById("nombre").value;
+	var notaT = document.getElementById("notaT").value;
+	var notaE = document.getElementById("notaE").value;
+	res.push( new Student( res.length + 1, nombre, notaT, notaE, "active" ) );
+	nombre = " ";
+	notaT = " ";
+	notaE = " ";
+	showStudent(res[res.length]);
+	return res;
 }
 
-function showStudent(){
-printHTML(" ");
-
-res.forEach(function(elemento){
-print.innerHTML += "<img src="+src+">" + "<br><strong>" + "Nombre: " + "</strong>" + elemento.studentname + "<br>" + elemento.techpoints + "<br>" 
-+ elemento.lifepoints + "<br>" + elemento.status + "<br>"
-});
-
+function showStudent() {
+	printHTML(" ");
+	res.forEach(function(elemento){
+	print.innerHTML += "<img src="+src+">" + "<br><strong>" + "Nombre: " + "</strong>" + elemento.studentname + "<br>" + elemento.techpoints + "<br>" 
+	+ elemento.lifepoints + "<br>" + elemento.status + "<br>";
+	});
 }
 
-function printHTML (html){
-print.innerHTML = '';
-print.innerHTML = html;
+function printHTML (html) {
+	print.innerHTML = '';
+	print.innerHTML = html;
 }
